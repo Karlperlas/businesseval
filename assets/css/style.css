@@ -1,0 +1,51 @@
+:root{
+   --box:180px
+
+}
+body{
+   height: 100vh;
+   background-image: url(../img/main-bg.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.logo {
+   height: var(--box);
+   width: var(--box);
+   background-color: darkgray;
+   display: block;
+   margin: 0 auto;
+   overflow-wrap: normal;
+}
+
+.logo > h1 {
+   font-size: 2rem;
+   color: white;
+}
+
+.login {
+   width: 300px;
+   background: rgba(89, 89, 89, .90);
+   padding: 2rem;
+   border-radius: .625rem;
+   border: 2px solid lightgray;
+}
+
+.lbl {
+   color: white;
+}
+
+.login-btn {
+   color: black;
+}
+
+.signup {
+   text-decoration: none;
+}
