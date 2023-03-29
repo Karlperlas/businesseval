@@ -10,7 +10,7 @@ body{
    background-repeat: no-repeat;
 }
 
-.container {
+.container, .signin {
    display: flex;
    justify-content: center;
    align-items: center;
@@ -30,7 +30,7 @@ body{
    color: white;
 }
 
-.login {
+.frm {
    width: 300px;
    background: rgba(89, 89, 89, .90);
    padding: 2rem;
