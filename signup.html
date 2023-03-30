@@ -12,16 +12,22 @@
 <body>
    <div class="container h-100">
       <div class="frm">
-         <form>
+         <form action="includes/signup.inc.php" method="post">
+            <h3 class="text-center text-white fw-bolder">
+               Sign Up Form
+            </h3>
+            <h6 class="text-center text-white fst-italic ">
+               RealTalk
+            </h6>
             <label class="form-label lbl" for="fname">First Name</label>
-            <input class="form-control" type="text" id="fname">
+            <input class="form-control" type="text" id="fname" name="fname">
             <label class="form-label lbl" for="lname">Last Name</label>
-            <input class="form-control" type="text" id="name">
+            <input class="form-control" type="text" id="lname" name="lname">
             <label class="form-label lbl" for="email">Email</label>
-            <input class="form-control" type="text" id="name">
+            <input class="form-control" type="text" id="email" name="email">
             <label class="form-label lbl" for="password">Password</label>
-            <input class="form-control" type="password" id="password">
-            <button class="btn btn-primary my-3 mx-auto d-block px-3">Sign up</button>
+            <input class="form-control" type="password" id="password" name="password">
+            <button class="btn btn-primary my-3 mx-auto d-block px-3" name="submit">Sign up</button>
          </form>
       </div>
    </div>
