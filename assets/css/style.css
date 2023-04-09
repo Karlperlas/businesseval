@@ -1,12 +1,13 @@
 :root{
    --box:180px
-
 }
-body{
+/* login */
+body, .userlog{
    height: 100vh;
    background-image: url(../img/main-bg.jpg);
-   background-size: cover;
+   background-size: 130%;
    background-position: center;
+   background-position-x: 0px;
    background-repeat: no-repeat;
 }
 
@@ -19,23 +20,33 @@ body{
 .logo {
    height: var(--box);
    width: var(--box);
-   background-color: darkgray;
+   background-color: grey;
+   background-image: url(../img/signup.png);
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
    display: block;
    margin: 0 auto;
-   overflow-wrap: normal;
+   border: 3px solid white;
+   border-radius: 4px;
 }
 
-.logo > h1 {
-   font-size: 2rem;
-   color: white;
-}
+
 
 .frm {
-   width: 300px;
+   width: auto;
    background: rgba(89, 89, 89, .90);
    padding: 2rem;
    border-radius: .625rem;
    border: 2px solid lightgray;
+}
+
+.frm > form {
+   min-width: 250px;
+}
+
+.frm > form > .frm-header {
+   font-weight: 600;
 }
 
 .lbl {
@@ -43,9 +54,30 @@ body{
 }
 
 .login-btn {
-   color: black;
+   display: block;
+   margin: 0 auto;
+   color: white;
+   font-weight: 600;
+   background: rgb(25, 111, 197);
+   border: none;
+   border-radius: 3px;
+   padding: 10px 25px;
 }
 
 .signup {
    text-decoration: none;
 }
+
+@media (min-width:360px) {
+   body, .userlog {
+      height: 100vh;
+      background-image: url(../img/main-bg.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+   }
+}
+
+/* signup page */
+
+
