@@ -1,12 +1,18 @@
 :root{
    --box:180px
-
 }
-body{
+
+* {
+   list-style: none;
+}
+
+/* login */
+body.userlog{
    height: 100vh;
-   background-image: url(../img/main-bg.jpg);
-   background-size: cover;
+   background-image: url(../img/try.jpg);
+   background-size: 130%;
    background-position: center;
+   background-position-x: 0px;
    background-repeat: no-repeat;
 }
 
@@ -19,33 +25,71 @@ body{
 .logo {
    height: var(--box);
    width: var(--box);
-   background-color: darkgray;
+   background-image: url(../img/RealTalk.png);
+   background-color: grey;
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
    display: block;
    margin: 0 auto;
-   overflow-wrap: normal;
+   border: 3px solid white;
+   border-radius: 4px;
 }
 
-.logo > h1 {
-   font-size: 2rem;
-   color: white;
-}
+
 
 .frm {
-   width: 300px;
-   background: rgba(89, 89, 89, .90);
+   width: auto;
+   background-image: linear-gradient(315deg,#333, #ddd);
    padding: 2rem;
    border-radius: .625rem;
    border: 2px solid lightgray;
+}
+
+.frm > form {
+   min-width: 250px;
+}
+
+.frm > form > .frm-header {
+   font-weight: 600;
 }
 
 .lbl {
    color: white;
 }
 
-.login-btn {
-   color: black;
+.submit-btn {
+   display: block;
+   margin: 0 auto;
+   color: white;
+   font-weight: 600;
+   background: #ff914d;
+   border: none;
+   border-radius: 8px;
+   padding: 10px;
 }
+
+
+@media (min-width:360px) {
+   body.userlog {
+      height: 100vh;
+      background-image: url(../img/try.jpg); 
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+   }
+}
+
+/* signup page */
 
 .signup {
    text-decoration: none;
+   color: #ff914d;
 }
+
+/* Home Page */
+ .home-nav {
+   background-color: #e5921f;
+   box-shadow: 0 -28px 5px 30px rgb(92, 92, 92);
+ }
+

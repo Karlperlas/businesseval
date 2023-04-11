@@ -7,21 +7,22 @@
    <link rel="stylesheet" href="assets/css/style.css">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
    <script defer src=" 	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+   <script defer src="https://kit.fontawesome.com/7385e84888.js" crossorigin="anonymous"></script>
    <title>RealTalk | Login</title>
 </head>
-<body>
+<body class="userlog">
    <div class="container signin my-auto h-100">
       <div class="frm">
-         <form>
-            <div class="logo text-center">
-               <h1>Logo</h1>
+         <form action="includes/login.inc.php" method="post">
+            <h1 class="frm-header text-center text-white">Log In</h1>
+            <div class="logo">
             </div>
             <label class="form-label lbl" for="email">Email</label>
-            <input class="form-control" type="email" id="email">
+            <input class="form-control" type="name" id="email" name="email">
             <label class="form-label lbl" for="password">Password</label>
-            <input class="form-control" type="password" id="password">
-            <p class="lbl">No account? <a class="signup fw-bold" href="signup.html">Sign up now!!!</a></p>
-            <button class="login-btn btn btn-primary my-3 mx-auto d-block px-3">Login</button>
+            <input class="form-control" type="text" id="password" name="password">
+            <p class="lbl">No account? <a class="signup fw-bold" href="signup.html">Sign up <i class="fa-solid fa-user-plus"></i></a></p>
+            <button class="submit-btn my-3 mx-auto d-block px-3" name="login">Log in</button>
          </form>
       </div>
    </div>
