@@ -8,7 +8,7 @@
          // output data of each row
          while($row = $result->fetch_assoc()) {
             if($email == $row['email'] And password_verify($pass, $row['pass'])) {
-               echo "Welcome";
+               header("Location: ../home.html?login_success");
             } else {
                echo "Wrong Password";
             }

@@ -1,10 +1,15 @@
 :root{
    --box:180px
 }
+
+* {
+   list-style: none;
+}
+
 /* login */
-body, .userlog{
+body.userlog{
    height: 100vh;
-   background-image: url(../img/main-bg.jpg);
+   background-image: url(../img/try.jpg);
    background-size: 130%;
    background-position: center;
    background-position-x: 0px;
@@ -20,8 +25,8 @@ body, .userlog{
 .logo {
    height: var(--box);
    width: var(--box);
+   background-image: url(../img/RealTalk.png);
    background-color: grey;
-   background-image: url(../img/signup.png);
    background-size: contain;
    background-position: center;
    background-repeat: no-repeat;
@@ -35,7 +40,7 @@ body, .userlog{
 
 .frm {
    width: auto;
-   background: rgba(89, 89, 89, .90);
+   background-image: linear-gradient(315deg,#333, #ddd);
    padding: 2rem;
    border-radius: .625rem;
    border: 2px solid lightgray;
@@ -53,25 +58,22 @@ body, .userlog{
    color: white;
 }
 
-.login-btn {
+.submit-btn {
    display: block;
    margin: 0 auto;
    color: white;
    font-weight: 600;
-   background: rgb(25, 111, 197);
+   background: #ff914d;
    border: none;
-   border-radius: 3px;
-   padding: 10px 25px;
+   border-radius: 8px;
+   padding: 10px;
 }
 
-.signup {
-   text-decoration: none;
-}
 
 @media (min-width:360px) {
-   body, .userlog {
+   body.userlog {
       height: 100vh;
-      background-image: url(../img/main-bg.jpg);
+      background-image: url(../img/try.jpg); 
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -80,4 +82,14 @@ body, .userlog{
 
 /* signup page */
 
+.signup {
+   text-decoration: none;
+   color: #ff914d;
+}
+
+/* Home Page */
+ .home-nav {
+   background-color: #e5921f;
+   box-shadow: 0 -28px 5px 30px rgb(92, 92, 92);
+ }
 
