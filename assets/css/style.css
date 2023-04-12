@@ -89,7 +89,16 @@ body.userlog{
 
 /* Home Page */
  .home-nav {
-   background-color: #e5921f;
+   background-color: #ff914d;
    box-shadow: 0 -28px 5px 30px rgb(92, 92, 92);
  }
 
+ .nav_link > a{
+   color: white;
+   text-decoration: none;
+   transition-duration: 200ms;
+ }
+
+ .nav_link > a:hover {
+   scale: 3;
+ }
