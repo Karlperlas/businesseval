@@ -8,7 +8,6 @@
 
 /* login */
 body.userlog{
-   height: 100vh;
    background-image: url(../img/try.jpg);
    background-size: 130%;
    background-position: center;
@@ -93,12 +92,54 @@ body.userlog{
    box-shadow: 0 -28px 5px 30px rgb(92, 92, 92);
  }
 
- .nav_link > a{
-   color: white;
-   text-decoration: none;
-   transition-duration: 200ms;
+ .navbar > ul > li  > a{
+   text-decoration: none !important;
+   font-weight: 600;
+}
+
+.navbar > ul > li {
+    transition: 120ms;
  }
 
- .nav_link > a:hover {
-   scale: 3;
+ .navbar > ul > li:hover {
+   scale: 1.2;
  }
+
+ .phone {
+   background-color: #ddd;
+   padding: 10px;
+   border: 2px solid #333;
+   border-radius: 5px;
+   width: 200px;
+   height: 350px;
+ }
+
+ .card-pic {
+   display: block;
+   margin: 0 auto;
+   height: 200px;
+   width: 100px;
+   background-image: url(../img/phone.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+ }
+
+.logo-footer {
+   height: var(--box);
+   width: var(--box);
+   background-image: url(../img/RealTalk.png);
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
+   display: block;
+   margin: 0 auto;
+}
+
+body.homepage {
+   background-image: url(../img/try.jpg);
+   background-size: cover;
+   background-position: center;
+   background-position-x: 0px;
+   background-repeat: no-repeat;
+}
