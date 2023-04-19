@@ -39,7 +39,7 @@ body.userlog{
 
 .frm {
    width: auto;
-   background-image: linear-gradient(315deg,#333, #ddd);
+   background-image: linear-gradient(315deg,#666, #bbb);
    padding: 2rem;
    border-radius: .625rem;
    border: 2px solid lightgray;
@@ -88,7 +88,7 @@ body.userlog{
 
 /* Home Page */
  .home-nav {
-   background-color: #e5921f;
+   background-color: #ff914d;
    box-shadow: 0 -28px 5px 30px rgb(92, 92, 92);
  }
 
@@ -143,4 +143,3 @@ body.homepage {
    background-position-x: 0px;
    background-repeat: no-repeat;
 }
-
